@@ -1,5 +1,5 @@
-# Lido CSM - Obol DVT Integration
-A walkthrough guide on how to integrate obol DVT into Lido's community staking module
+# Lido CSM - Squad Staking Guide
+A walkthrough guide on how to start Squad Staking using Obol DVs in the Lido's community staking module.
 
 Here's a version of the integration guide formatted for easy copying and pasting into a GitHub repository:
 
@@ -7,19 +7,19 @@ Here's a version of the integration guide formatted for easy copying and pasting
 
 # Lido CSM – Obol Integration Guide
 
-This guide will walk you through the process of integrating Obol Distributed Validator Technology (DVT) with the Lido Collaborative Staking Module (CSM). Obol DVT provides a decentralized and secure infrastructure for Ethereum staking, enhancing validator performance and security. Using this DVT can increase your security, and if you want to run it as a cluster, it will further reduce your 2 ETH bond. The major benifits of squad staking on CSM include: 
+This guide will walk you through the process of integrating Obol Distributed Validators (DVs) with the Lido Collaborative Staking Module (CSM). Obol DVs provide a decentralized and secure infrastructure for Ethereum staking, enhancing validator performance and security. Using DVs can increase your security, and if you want to run it as a squad (cluster), it will further reduce your 2 ETH bond. The major benifits of squad staking in the CSM include: 
 
 - Accessability
 - Resilliency
 - Rewards 
 
-In this guide, we will run through Obol integration in a cluster of 4 operators, as we did for operator 69, the first CSM operator to use Obol DVT Technology. For the following guide you will need to gather a group you trust to operate with. It is important to note this guide does not outline the use of SAFE multisig wallet and for extra security and practise you should look to use one. 
+In this guide, we will run through Obol integration in a cluster of 4 operators, as we did for operator 69, the first CSM operator to use Obol DVs. For the following guide you will need to gather a squad you trust to operate with. It is important to note this guide does not outline the use of SAFE multisig wallet and for extra security and practise you should look to use one. 
 
-## Running a DV as a Group on CSM
+## Running a DV as a Squad on CSM
 
 ### Overview
 
-Run a DV cluster as a group, where several operators run the nodes that make up the cluster. In this setup, the key shares are created using a distributed key generation process, avoiding the full private keys being stored in any one place. This approach can also be used by single operators looking to manage all nodes of a cluster while creating the key shares in a trust-minimized fashion.
+Run a DV cluster as a squad, where several operators run the nodes that make up the cluster. In this setup, the key shares are created using a distributed key generation process, avoiding the full private keys being stored in any one place. This approach can also be used by single operators looking to manage all nodes of a cluster while creating the key shares in a trust-minimized fashion.
 
 You can read more about this approach [here](https://docs.obol.org/docs).
 
@@ -35,7 +35,7 @@ Before beginning the integration process, ensure you meet the following prerequi
 
 - **Git**: Ensure that you have Git installed on your system for version control and code management.
 
-- **Docker**: Install Docker and make sure it is running before executing the commands. Docker is required for deploying Obol DVT nodes.
+- **Docker**: Install Docker and make sure it is running before executing the commands. Docker is required for deploying Obol DVs nodes.
 
 If you are unsure, please read the [Obol documentation](https://docs.obol.org/docs/start/quickstart_overview) comprehensively on how to run as a DV cluster. This will be a walkthrough of a CLI setup as the launchpad currently uses the retroactive fund address that is not accepted by the Lido DAO and CSM.
 
@@ -131,7 +131,7 @@ For a local setup, you may need to port forward these ports for your device's lo
 
 ---
 
-# Obol - Create a DV with group
+# Obol - Create a DV with Squad
 ## Step 1: Get your ENR
 
 ### CLI
@@ -402,6 +402,6 @@ The next step should be taken by the cluster leader.
 
 Now you just need to wait for the Lido CSM to deposit your validator keys (using your deposit data file). Give some time for the keys to be deposited, and then you will be able to click the Beaconchain link to view your validator.
 
-🎉Congratulations, you are now running a CSM Obol DVT Validator.🎉
+🎉Congratulations, you are now running a CSM Obol DVs Validator.🎉
 
 
